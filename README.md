@@ -1,24 +1,59 @@
-# Online 3D Viewer
+# 🛰️ XDLinx 3D Viewer & AutoCAD 2D Engineering Studio
 
-[![Build status](https://github.com/kovacsv/Online3DViewer/actions/workflows/build.yml/badge.svg)](https://github.com/kovacsv/Online3DViewer/actions/workflows/build.yml)
-[![npm version](https://badge.fury.io/js/online-3d-viewer.svg)](https://badge.fury.io/js/online-3d-viewer)
-[![DeepScan grade](https://deepscan.io/api/teams/16586/projects/19893/branches/524595/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=16586&pid=19893&bid=524595)
+> **Professional Space Labs 3D CAD Engine & Automated AutoCAD 2D Engineering Studio**
 
-Online 3D Viewer (https://3dviewer.net) is a free and open source web solution to visualize and explore 3D models in your browser. This repository contains the source code of the website and the library behind it.
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-GitHub_Pages-00f0ff.svg)](https://hackmacha007.github.io/Xdlinx_3D_viewer/website/index.html)
 
-[Live website](https://3dviewer.net) &nbsp;-&nbsp; [Website documentation](https://3dviewer.net/info) &nbsp;-&nbsp; [Developer documentation](https://kovacsv.github.io/Online3DViewer) &nbsp;-&nbsp; [Discord server](https://discord.gg/C7x9u833yN)
+---
 
-## Example
+## 🌟 Key Features
 
-![Start Page](assets/images/3dviewer_net_start_page.png?raw=true)
+### 1. 🌐 High-Performance 3D CAD Viewing
+- **Multi-Format 3D Support**: Native rendering for `STEP (.stp, .step)`, `IGES (.igs)`, `STL`, `OBJ`, `3DM`, `FBX`, `GLTF / GLB`, `IFC`, `BIM`, `3MF`, `AMF`, and `BREP`.
+- **WebGL Hardware Acceleration**: Interactive rotation, pan, zoom, section views, exploding assemblies, measurement, and environment lighting maps.
 
-[Check the live version!](https://3dviewer.net/#model=https://raw.githubusercontent.com/kovacsv/Online3DViewer/dev/test/testfiles/gltf/DamagedHelmet/glTF-Binary/DamagedHelmet.glb)
+### 2. 📐 Automated AutoCAD 2D Engineering Studio
+- **4 Projected Engineering Views**: Instantly projects **Front View**, **Top View**, **Right View**, and **Isometric View** directly from loaded 3D B-Rep CAD geometry.
+- **Auto-Dimensioning Engine**: Computes high-precision linear dimensions ($D_x, D_y, D_z$), hole callouts ($8\times\varnothing8.50\text{ mm THRU}$), PCD pitch circle diameters, and center recess radii.
 
-## Supported file formats
+### 3. 🧮 Real 3D B-Rep Mathematical Calculations
+- **Exact Signed Volume ($V$)**: Uses the exact mathematical Gauss divergence theorem ($\sum \frac{\vec{a} \cdot (\vec{b} \times \vec{c})}{6}$) on mesh geometry ($\text{mm}^3$).
+- **Exact Surface Area ($A$)**: Sums real 3D triangle cross-product vector areas ($\text{mm}^2$).
+- **Center of Gravity (CoG)**: Computes exact $CoG_x, CoG_y, CoG_z$ centroid coordinates.
+- **Material Mass Selector**: Real-time mass calculation in **kg** and **lbs** for *Aluminum 6061-T6, Stainless Steel 316L, Titanium Ti-6Al-4V, Copper C11000, and PEEK*.
 
-* **Import**: 3dm, 3ds, 3mf, amf, bim, brep, dae, fbx, fcstd, gltf, ifc, iges, step, stl, obj, off, ply, wrl.
-* **Export**: 3dm, bim, gltf, obj, off, stl, ply.
+### 4. 📄 1-Click Vector PDF Export
+- Exports print-ready A3/A4 landscape PDFs containing **all 4 projected views, auto-dimensions, exact calculation table, and ISO 128 title block**.
 
-## External Libraries
+---
 
-Online 3D Viewer uses these wonderful libraries: [three.js](https://github.com/mrdoob/three.js), [pickr](https://github.com/Simonwep/pickr), [fflate](https://github.com/101arrowz/fflate), [draco](https://github.com/google/draco), [rhino3dm](https://github.com/mcneel/rhino3dm), [web-ifc](https://github.com/tomvandig/web-ifc), [occt-import-js](https://github.com/kovacsv/occt-import-js).
+## 🚀 Live Demo & Local Development
+
+### Live Website
+👉 **[https://hackmacha007.github.io/Xdlinx_3D_viewer/website/index.html](https://hackmacha007.github.io/Xdlinx_3D_viewer/website/index.html)**
+
+### Running Locally
+1. Clone repository:
+   ```bash
+   git clone https://github.com/Hackmacha007/Xdlinx_3D_viewer.git
+   cd Xdlinx_3D_viewer
+   ```
+2. Install dependencies & build:
+   ```bash
+   npm install
+   npm run build_dev
+   ```
+3. Start local server:
+   ```bash
+   python -m http.server 9000
+   ```
+   Open `http://localhost:9000/website/index.html` in browser!
+
+---
+
+## 📜 License & Acknowledgements
+
+Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for details.
+
+*Built with inspiration and core rendering components from the open-source [Online3DViewer](https://github.com/kovacsv/Online3DViewer) engine by Viktor Kovacs.*
