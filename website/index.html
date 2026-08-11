@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="icon" type="image/png" href="assets/images/xdlinx_satellite_icon.png">
+
+    <title>XDLINX SPACE LABS — 3D Viewer & AutoCAD CAD Engine</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- website start -->
+    <link rel="stylesheet" type="text/css" href="../build/website_dev/o3dv.website.min.css">
+    <script type="text/javascript" src="../build/website_dev/o3dv.website.min.js"></script>
+    <!-- website end -->
+
+    <script type="text/javascript">
+        OV.SetWebsiteEventHandler ((eventName, eventLabel, eventParams) => {
+            console.log ({
+                eventName : eventName,
+                eventLabel : eventLabel,
+                eventParams : eventParams
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        OV.StartWebsite ();
+    </script>
+
+    <style>
+        /* Sleek Aerospace Dark Header & Clean Official Logo */
+        div.header {
+            background: #000000 !important;
+            border-bottom: 1px solid rgba(0, 240, 255, 0.3) !important;
+        }
+
+        .xdlinx-logo-img {
+            height: 38px !important;
+            display: block !important;
+            object-fit: contain !important;
+            transition: transform 0.2s ease, filter 0.2s ease !important;
+        }
+
+        .xdlinx-logo-img:hover {
+            filter: drop-shadow(0 0 10px rgba(0, 240, 255, 0.6)) !important;
+            transform: scale(1.02) !important;
+        }
+
+        .xdlinx-intro-logo {
+            height: 72px !important;
+            display: block !important;
+            object-fit: contain !important;
+            margin-bottom: 12px !important;
+            filter: drop-shadow(0 0 15px rgba(0, 240, 255, 0.4)) !important;
+        }
+    </style>
+</head>
+
+<body class="dark-theme">
+    <input type="file" id="open_file" style="display:none;" multiple></input>
+    <div class="header" id="header">
+        <div class="title">
+            <div class="title_left">
+                <a href="index.html" class="xdlinx-logo-link" style="text-decoration:none; display:flex; align-items:center;">
+                    <img src="assets/images/xdlinx_official_logo.png" alt="XDLINX SPACE LABS" class="xdlinx-logo-img">
+                </a>
+            </div>
+            <div class="title_right" id="header_buttons"></div>
+            <div class="main_file_name only_full_width" id="main_file_name"></div>
+        </div>
+        <div class="toolbar" id="toolbar"></div>
+    </div>
+    <div class="main" id="main">
+        <div class="main_left_container only_full_width" id="main_left_container">
+            <div class="main_navigator ov_panel_set_container" id="main_navigator"></div>
+            <div class="main_splitter" id="main_navigator_splitter"></div>
+        </div>
+        <div class="main_viewer" id="main_viewer"></div>
+        <div class="main_right_container only_full_width" id="main_right_container">
+            <div class="main_splitter" id="main_sidebar_splitter"></div>
+            <div class="main_sidebar ov_panel_set_right_container" id="main_sidebar"></div>
+        </div>
+    </div>
+    <div class="intro ov_thin_scrollbar" id="intro">
+        <div class="intro_content" id="intro_content">
+            <div class="intro_logo">
+                <div style="display:flex; flex-direction:column; align-items:center; gap:12px; margin-bottom:16px;">
+                    <img src="assets/images/xdlinx_official_logo.png" alt="XDLINX SPACE LABS" class="xdlinx-intro-logo">
+                    <div style="font-size: 14px; color: #94a3b8; font-family: 'Inter', sans-serif; font-weight: 600; margin-top: 4px;">Satellite Mission-as-a-Service 3D CAD & AutoCAD Automation Engine</div>
+                </div>
+                <div class="intro_dragdrop_text" id="intro_dragdrop_text"></div>
+            </div>
+            <div class="intro_formats">
+                <div class="intro_formats_title" id="intro_formats_title"></div>
+                <div class="intro_file_formats">
+                    <a href="#model=assets/models/RhinoLogo.3dm">3dm</a>
+                    <a href="#model=assets/models/cubes.3ds,assets/models/texture.png">3ds</a>
+                    <a href="#model=assets/models/rhombicuboctahedron.3mf">3mf</a>
+                    <a href="#model=assets/models/rook.amf">amf</a>
+                    <a href="#model=assets/models/MultipleMeshes.bim">bim</a>
+                    <a href="#model=assets/models/as1_pe_203.brep">brep</a>
+                    <a href="#model=assets/models/X_Bot.dae">dae</a>
+                    <a href="#model=assets/models/Y_Bot.fbx">fbx</a>
+                    <a href="#model=assets/models/ArchDetail.FCStd">fcstd</a>
+                    <a href="#model=assets/models/DamagedHelmet.glb">gltf</a>
+                    <a href="#model=assets/models/haus.ifc">ifc</a>
+                    <a href="#model=assets/models/as1_pe_203.igs">iges</a>
+                    <a href="#model=assets/models/as1_pe_203.stp">step</a>
+                    <a href="#model=assets/models/utah_teapot.stl">stl</a>
+                    <a href="#model=assets/models/solids.obj,assets/models/solids.mtl">obj</a>
+                    <a href="#model=assets/models/cube.off">off</a>
+                    <a href="#model=assets/models/cow.ply">ply</a>
+                    <a href="#model=assets/models/extrusion3.wrl">wrl</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
