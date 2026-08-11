@@ -1,6 +1,6 @@
-# 🛰️ XDLinx 3D Viewer & AutoCAD 2D Engineering Studio
+# 📐 AstraVector 3D Studio & AutoCAD 2D Engineering Studio
 
-> **Professional Space Labs 3D CAD Engine & Automated AutoCAD 2D Engineering Studio**
+> **Next-Generation 3D CAD Engine & Automated AutoCAD 2D Engineering Studio**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Live Demo](https://img.shields.io/badge/Live_Demo-GitHub_Pages-00f0ff.svg)](https://hackmacha007.github.io/Xdlinx_3D_viewer/website/index.html)
@@ -56,4 +56,4 @@
 
 Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for details.
 
-*Built with inspiration and core rendering components from the open-source [Online3DViewer](https://github.com/kovacsv/Online3DViewer) engine by Viktor Kovacs.*
+*Built with core rendering engine components from open-source 3D technology.*

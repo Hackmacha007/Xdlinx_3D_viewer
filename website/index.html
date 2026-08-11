@@ -4,9 +4,9 @@
 <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
-    <link rel="icon" type="image/png" href="assets/images/xdlinx_satellite_icon.png">
+    <link rel="icon" type="image/svg+xml" href="assets/images/astravector_logo.svg">
 
-    <title>XDLINX SPACE LABS — 3D Viewer & AutoCAD CAD Engine</title>
+    <title>AstraVector 3D Studio — Next-Gen CAD Engine & AutoCAD Studio</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,30 +32,51 @@
     </script>
 
     <style>
-        /* Sleek Aerospace Dark Header & Clean Official Logo */
+        /* AstraVector Studio Modern Header Theme */
         div.header {
-            background: #000000 !important;
+            background: #090b10 !important;
             border-bottom: 1px solid rgba(0, 240, 255, 0.3) !important;
         }
 
-        .xdlinx-logo-img {
-            height: 38px !important;
-            display: block !important;
-            object-fit: contain !important;
-            transition: transform 0.2s ease, filter 0.2s ease !important;
+        .astra-brand-badge {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            padding: 4px 8px;
         }
 
-        .xdlinx-logo-img:hover {
-            filter: drop-shadow(0 0 10px rgba(0, 240, 255, 0.6)) !important;
-            transform: scale(1.02) !important;
+        .astra-brand-title {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 800;
+            font-size: 18px;
+            letter-spacing: 0.8px;
+            line-height: 1;
+            display: flex;
+            align-items: center;
+            gap: 6px;
         }
 
-        .xdlinx-intro-logo {
-            height: 72px !important;
-            display: block !important;
-            object-fit: contain !important;
-            margin-bottom: 12px !important;
-            filter: drop-shadow(0 0 15px rgba(0, 240, 255, 0.4)) !important;
+        .astra-brand-title .main-title {
+            background: linear-gradient(135deg, #00f0ff 0%, #00ff9d 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .astra-brand-title .sub-title {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .astra-pill {
+            font-size: 9px;
+            background: rgba(0, 240, 255, 0.15);
+            color: #00f0ff;
+            border: 1px solid rgba(0, 240, 255, 0.4);
+            padding: 3px 7px;
+            border-radius: 4px;
+            font-family: 'Inter', sans-serif;
+            letter-spacing: 0.5px;
         }
     </style>
 </head>
@@ -65,8 +86,18 @@
     <div class="header" id="header">
         <div class="title">
             <div class="title_left">
-                <a href="index.html" class="xdlinx-logo-link" style="text-decoration:none; display:flex; align-items:center;">
-                    <img src="assets/images/xdlinx_official_logo.png" alt="XDLINX SPACE LABS" class="xdlinx-logo-img">
+                <a href="index.html" class="astra-brand-badge">
+                    <svg width="34" height="34" viewBox="0 0 36 36" fill="none">
+                        <path d="M18 3L4 11L18 19L32 11L18 3Z" stroke="#00f0ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4 25L18 33L32 25" stroke="#00ff9d" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4 18L18 26L32 18" stroke="#a855f7" stroke-width="2" stroke-dasharray="3 3"/>
+                        <circle cx="18" cy="11" r="3" fill="#00f0ff"/>
+                    </svg>
+                    <div class="astra-brand-title">
+                        <span class="main-title">ASTRAVECTOR</span>
+                        <span class="sub-title">3D STUDIO</span>
+                        <span class="astra-pill">PRO CAD</span>
+                    </div>
                 </a>
             </div>
             <div class="title_right" id="header_buttons"></div>
@@ -88,9 +119,18 @@
     <div class="intro ov_thin_scrollbar" id="intro">
         <div class="intro_content" id="intro_content">
             <div class="intro_logo">
-                <div style="display:flex; flex-direction:column; align-items:center; gap:12px; margin-bottom:16px;">
-                    <img src="assets/images/xdlinx_official_logo.png" alt="XDLINX SPACE LABS" class="xdlinx-intro-logo">
-                    <div style="font-size: 14px; color: #94a3b8; font-family: 'Inter', sans-serif; font-weight: 600; margin-top: 4px;">Satellite Mission-as-a-Service 3D CAD & AutoCAD Automation Engine</div>
+                <div style="display:flex; flex-direction:column; align-items:center; gap:14px; margin-bottom:16px;">
+                    <svg width="72" height="72" viewBox="0 0 36 36" fill="none">
+                        <path d="M18 3L4 11L18 19L32 11L18 3Z" stroke="#00f0ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4 25L18 33L32 25" stroke="#00ff9d" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4 18L18 26L32 18" stroke="#a855f7" stroke-width="2" stroke-dasharray="3 3"/>
+                        <circle cx="18" cy="11" r="3" fill="#00f0ff"/>
+                    </svg>
+                    <div style="font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 32px; letter-spacing: 1px;">
+                        <span style="background: linear-gradient(135deg, #00f0ff 0%, #00ff9d 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">ASTRAVECTOR</span>
+                        <span style="color: #ffffff;"> 3D STUDIO</span>
+                    </div>
+                    <div style="font-size: 14px; color: #94a3b8; font-family: 'Inter', sans-serif; font-weight: 600;">Next-Generation 3D CAD Engine & Automated AutoCAD 2D Studio</div>
                 </div>
                 <div class="intro_dragdrop_text" id="intro_dragdrop_text"></div>
             </div>
